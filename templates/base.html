@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+        .messageme {
+            text-align: right;
+        }
+    </style>
+</head>
+<body >
+    <div style="width: 60%; background: darkgray; padding: 15px; margin-left: 20%; margin-top: 10% " >
+    {% block content %}
+    {% endblock %}
+
+    {% block domready %}
+    {% endblock %}
+    </div>
+</body>
+</html>
